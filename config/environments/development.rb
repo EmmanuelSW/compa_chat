@@ -1,4 +1,7 @@
 Rails.application.configure do
+
+  # Allowed my IP for ActionCable
+  Rails.application.config.action_cable.allowed_request_origins = ['http://192.168.1.6:3000']
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
